@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+
+<div class="overlay">
+    <div class="card">
+        <h2>Welcome {{ user }} 🎧</h2>
+
+        <a href="/text"><button>✍️ Type Mood</button></a>
+        <a href="/camera"><button>📷 Detect Mood by Face</button></a>
+        <a href="/logout"><button style="background:#444;">Logout</button></a>
+    </div>
+</div>
+
+</body>
+</html>

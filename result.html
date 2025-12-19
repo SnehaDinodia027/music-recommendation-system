@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mood Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="page">
+    <div class="card">
+
+        <h2>🎧 Mood Detected</h2>
+        <h3>{{ mood }}</h3>
+
+        <a href="{{ youtube }}" target="_blank">
+            <button>▶ YouTube Playlist</button>
+        </a>
+
+        <br><br>
+
+        <a href="{{ spotify }}" target="_blank">
+            <button>🎵 Spotify Playlist</button>
+        </a>
+
+        <div class="small-text" style="margin-top:20px;">
+            <a href="{{ url_for('dashboard') }}">⬅ Back to Dashboard</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

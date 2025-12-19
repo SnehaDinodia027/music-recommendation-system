@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Face Mood Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="page">
+    <div class="card">
+
+        <h2>📷 Face Mood Detection</h2>
+        <p>Show your face to detect mood</p>
+
+        <!-- CAMERA FEED -->
+        <img src="{{ url_for('video_feed') }}" width="100%" style="border-radius:15px; margin-bottom:15px;">
+
+        <!-- BUTTON -->
+        <a href="{{ url_for('result', mood='Happy') }}">
+            <button>🎵 Get Music</button>
+        </a>
+
+        <div class="small-text">
+            <a href="{{ url_for('dashboard') }}">⬅ Back</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
